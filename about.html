@@ -14,7 +14,8 @@
     <link rel="Shortcut Icon" type="image/x-icon" href="images/logo(png).png" />
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
-    <link rel="stylesheet" href="css.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+	<link rel="stylesheet" href="css.css">
 
     
     
@@ -22,7 +23,7 @@
 </head>
 
 <body>
-		<nav class="nav ">
+		<nav class="nav fixed">
 			<a class="et-hero-tab home-btn col-lg-1" href="#tab-home"><img src="images/logo-small(png).png" alt="飲食客 IN STOCK"></a>
 			<a class="et-hero-tab  col-lg-2" href="#tab-about"><i class="fas fa-coffee mr-2"></i>About</a>
 			<a class="et-hero-tab  col-lg-2" href="#tab-menu"><i class="fas fa-utensils mr-2"></i>Menu</a>
@@ -47,7 +48,7 @@
 				</ul>
 			</div>
 		</nav>
-        <div class="slider_container">
+        <div class="slider_container ">
             <div>
                 <img src="images/menu-bg1.jpg" alt="" style="display:block ">
             </div>
@@ -63,7 +64,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="team-heading text-center">
-							<h2>飲食客家族</h2>
+							<h2>飲食客の家族</h2>
 
 							<h4>飲食客 IN STOCK ，用台灣在地的新鮮食材，提供用心堅持手作的餐點，讓你享受美食的同時也能感受到我們的用心。</h4>
 						</div>
@@ -75,7 +76,7 @@
 
 							<div class="person-detail">
 								<div class="arrow-bottom"></div>
-								<h3>Mr. Graham</h3>
+								<h3>Mr. Tse</h3>
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
 							</div>
 						
@@ -106,7 +107,7 @@
 						<div class="col-md-2 single-member col-sm-4">
 							<div class="person-detail">
 								<div class="arrow-top"></div>
-								<h3>Mr Jasak</h3>
+								<h3>Ms. Jannie</h3>
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
 							</div>
 							<div class="person">
@@ -130,7 +131,7 @@
 
 							<div class="person-detail">
 								<div class="arrow-top"></div>
-								<h3>Mr. Mikari</h3>
+								<h3>Ms. Marry</h3>
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
 							</div>
 							<div class="person">
@@ -172,15 +173,15 @@
 
         });
     
-        var navTop = $("nav").offset().top;
-        $(window).scroll(function () {
-            var scrollTop = $(this).scrollTop();
-            if (scrollTop >= navTop) {
-            $("nav").addClass("fixed")
-            } else {
-            $("nav").removeClass("fixed")
-            }
-        });
+        // var navTop = $("nav").offset().top;
+        // $(window).scroll(function () {
+        //     var scrollTop = $(this).scrollTop();
+        //     if (scrollTop >= navTop) {
+        //     $("nav").addClass("fixed")
+        //     } else {
+        //     $("nav").removeClass("fixed")
+        //     }
+        // });
 
 		 $(".menu-bar").click(function(){
             $(this).toggleClass('active');
