@@ -243,7 +243,7 @@
                 font-size: 0.9em;
             }
             .about_us,.menu_box,.news_box,.Contact {
-                
+                margin: 0;
                 padding: 20% 10px;
             }      
         } 
