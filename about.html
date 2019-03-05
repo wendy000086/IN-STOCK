@@ -12,7 +12,8 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="normalize.css">
     <link rel="Shortcut Icon" type="image/x-icon" href="images/logo(png).png" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
     <link rel="stylesheet" href="css.css">
 
     
@@ -21,19 +22,31 @@
 </head>
 
 <body>
-        <nav class="nav">
-            <a class="et-hero-tab home-btn col-lg-1" href="Homepage.html"><img src="images/logo-small(png).png" alt="飲食客 IN STOCK"></a>
-            <a class="et-hero-tab  col-lg-2" href="Homepage.html#tab-about"><i class="fas fa-coffee mr-2"></i>About</a>
-            <a class="et-hero-tab  col-lg-2" href="Homepage.html#tab-menu"><i class="fas fa-utensils mr-2"></i>Menu</a>
-            <a class="et-hero-tab  col-lg-2" href="Homepage.html#tab-news"><i class="far fa-newspaper mr-2"></i>News</a>
-            <a class="et-hero-tab  col-lg-2" href="Homepage.html#tab-contact"><i class="fa fa-fw fa-envelope mr-2"></i>Contact</a>
+		<nav class="nav ">
+			<a class="et-hero-tab home-btn col-lg-1" href="#tab-home"><img src="images/logo-small(png).png" alt="飲食客 IN STOCK"></a>
+			<a class="et-hero-tab  col-lg-2" href="#tab-about"><i class="fas fa-coffee mr-2"></i>About</a>
+			<a class="et-hero-tab  col-lg-2" href="#tab-menu"><i class="fas fa-utensils mr-2"></i>Menu</a>
+			<a class="et-hero-tab  col-lg-2" href="#tab-news"><i class="far fa-newspaper mr-2"></i>News</a>
+			<a class="et-hero-tab  col-lg-2" href="#tab-contact"><i class="fa fa-fw fa-envelope mr-2"></i>Contact</a>
 
-            <form class="form-inline my-2 my-lg-0 col-lg et-hero-form">               
-                <input class="form-control mr-2 col-lg-3" type="search" placeholder="Search">
-                <a class="col-lg-1 flex et-hero-form " href=""><i class="fa fa-fw fa-search mr-2 "></i></a>
-                <a class="col-lg-1 flex et-hero-form " href=""><i class="fab fa-facebook-square mr-2"></i></a>
-            </form>
-        </nav>
+			<form class="form-inline my-2 my-lg-0 col-lg et-hero-form">               
+				<input class="form-control mr-2 col-lg-3" type="search" placeholder="Search">
+				<a class="col-lg-1 flex et-hero-form " href=""><i class="fa fa-fw fa-search mr-2 "></i></a>
+				<a class="col-lg-1 flex et-hero-form " href=""><i class="fab fa-facebook-square mr-2"></i></a>
+			</form>
+			<div class="menu-bar transition "  >
+				<div class="bar_n bar1 transition"></div>
+				<div class="bar_n bar2 transition"></div>
+				<div class="bar_n bar3 transition"></div>
+				<ul class="transition">
+				<li><a class="transition py-3 " href="index.html"><i class="fas fa-home"></i>Home</a></li>
+				<li><a class="transition py-3 " href="index.html#tab-about"><i class="fas fa-coffee mr-2"></i>About</a></li>
+				<li><a class="transition py-3 " href="index.html#tab-menu"><i class="fas fa-utensils mr-2"></i>Menu</a></li>
+				<li><a class="transition py-3 " href="index.html#tab-news"><i class="far fa-newspaper mr-2"></i>News</a></li>
+				<li><a class="transition py-3 " href="index.html#tab-contact"><i class="fa fa-fw fa-envelope mr-2"></i>Contact</a></li>
+				</ul>
+			</div>
+		</nav>
         <div class="slider_container">
             <div>
                 <img src="images/menu-bg1.jpg" alt="" style="display:block ">
@@ -159,7 +172,17 @@
 
         });
     
-        $(".menu3").click(function(){
+        var navTop = $("nav").offset().top;
+        $(window).scroll(function () {
+            var scrollTop = $(this).scrollTop();
+            if (scrollTop >= navTop) {
+            $("nav").addClass("fixed")
+            } else {
+            $("nav").removeClass("fixed")
+            }
+        });
+
+		 $(".menu-bar").click(function(){
             $(this).toggleClass('active');
         });
 
