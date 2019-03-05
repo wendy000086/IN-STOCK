@@ -219,7 +219,7 @@
         .btn-toAbout{
             border: 1px solid white;
             height: 45px;
-            width: 18vw;
+            width: 22vw;
             margin-top:3%; 
             margin-bottom: 8px;
             line-height: 2rem;
@@ -239,6 +239,9 @@
                 font-size: 1em;
                 margin: 0 10%;
                 
+            }
+            .btn-toAbout a{
+                font-size: 0.9em;
             }
 
             
