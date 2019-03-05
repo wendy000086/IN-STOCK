@@ -163,6 +163,8 @@
             .menu-bar ul li a{ 
                padding: 0 1em;
             }
+           
+
             
         } 
         /*-------------about us-------------- */
@@ -226,6 +228,21 @@
         .btn-toAbout a{
             color: rgb(230, 230, 230)
         }
+        @media screen and (max-width:700px){
+            .et-main h1 {
+                font-size: 2.5rem;
+            }
+            .et-main h4{
+                font-size: 1.2rem;
+            }
+            .slide-about p {
+                font-size: 1em;
+                margin: 0 10%;
+                
+            }
+
+            
+        } 
         
         /*--------- section menu------------ */
         .o_box.show{
