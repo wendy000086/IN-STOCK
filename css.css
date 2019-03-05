@@ -376,6 +376,17 @@
             background-color: #FDB45F;
             color: #ffffff;
         }
+        @media screen and (max-width:700px){
+            .center_box h3 {
+                font-size: 1.5rem;
+            }
+            .center_box p {
+                font-size: 1.1rem;
+            }
+            .mainBtn {
+                width: 80px;
+            }
+        } 
         /*---------- section map---------- */
         .Contact{
             background: url(images/contact.jpg) no-repeat center center;
