@@ -144,13 +144,15 @@
             }
             .menu-bar ul {
                 position: absolute;
-                right: -109px;
+                right: -133px;
                 top: 62px;
                 background: #facc98;
-                width: 165px;;
+                width: 190px;
                 overflow: hidden;
                 text-align: left;
-                padding-left: 1em;
+            }
+            .menu-bar ul li a{ 
+               padding: 0 1em;
             }
             
         } 
