@@ -190,9 +190,8 @@
             text-align: center;
         }
         .about_us,.menu_box,.news_box,.Contact {
-            /* max-width: 1240px; */
-            /* margin: 4rem auto; */
-            padding: 20% 10px;
+            margin: 4rem auto;
+            padding: 4% 10px;
         }      
         .et-main h1{
             font-size: 3.5rem;
@@ -243,6 +242,10 @@
             .btn-toAbout a{
                 font-size: 0.9em;
             }
+            .about_us,.menu_box,.news_box,.Contact {
+                
+                padding: 20% 10px;
+            }      
         } 
         
         /*--------- section menu------------ */
