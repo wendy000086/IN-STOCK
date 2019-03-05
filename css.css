@@ -32,6 +32,15 @@
             
         }
 
+        @media screen and (max-width:700px){
+            .full_bg{
+                height:8rem;
+                width: auto;
+                margin: 65% auto;
+            }
+            
+        } 
+
     /*---- nav -------*/
         nav{
             display: flex;
