@@ -701,6 +701,7 @@
             padding: 0 0 0 2px;
             margin-left: 150px;
             margin-top: -50px;
+            z-index: 3;
           }
         .menu3.active{
             background: #fff;
@@ -801,7 +802,7 @@
                 position: fixed;
                 background:#fff;
                 width:100%;
-                z-index: 2;
+                opacity: 1;
               }
             #menu{
                 overflow-y: hidden;
