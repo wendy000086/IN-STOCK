@@ -709,7 +709,7 @@
             position: absolute;
             left:0;
             top:42px;
-            background:rgba(255, 255, 255, 0.9);
+            background:rgb(255, 255, 255);
             width:140px;
             opacity: 0;
             max-height: 0;
@@ -799,7 +799,7 @@
             }
             .menu3 ul{
                 position: fixed;
-                background:rgb(255, 255, 255,);
+                background:rgb(255, 255, 255);
                 width:100%;
                 z-index: 2;
               }
