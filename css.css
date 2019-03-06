@@ -791,6 +791,7 @@
                 position: fixed;
                 top: 50px;
                 left: -150px;
+                width: 100%;
             }
             .food-name {
                 margin: 2.3rem 12%;
