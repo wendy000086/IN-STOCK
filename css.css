@@ -631,23 +631,30 @@
          #menu h1{
             font-size: 60px;
             font-weight: 800;
-            color: rgb(122, 61, 3);
+            color: rgb(145, 72, 3);
             text-align: center;
             padding: 0rem 3rem;
            
         }
         #menu .heading{
             color: #5C5C5C;
-            font-size: 30px;
+            font-size: 32px;
             font-weight: 500;
+        }
+        #menu h2{
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        .food-name{
+            margin: 2.3rem 2%;
         }
         #menu h4 {
             line-height: 1.5;
-            font-size: 18px;
+            font-size: 1.4rem;
             font-weight:bold;
         }
         #menu h5 {
-            font-size: 14px;
+            font-size: 1.1rem;
             
         }
         #menu .col-md-8 {
@@ -655,11 +662,6 @@
           margin-bottom: 40px;
           border-bottom: 2px solid #828282;
           display: flex;
-          
-        }
-        #menu .col-md-6 {
-          padding-bottom: 30px;
-          
           
         }
         #menu span {
@@ -676,17 +678,13 @@
           background-attachment: fixed !important;
           background-size: cover !important;
         }
-        .heading {
-            font-size: 22px;
-            font-weight: 500;
-
-          }
+        
         .meat-bar:hover {
             text-decoration: none
 
           }
 
-          ul.tabs li.active  {
+        ul.tabs li.active  {
             background: #fff;
             border: 1px solid#fff;
         }  
@@ -697,7 +695,9 @@
         .menu3{
             display: inline-block;
             cursor: pointer;
-            position: relative;
+            position: absolute;
+            top: 155px;
+            left: -85px;
             padding: 0 0 0 2px;
             margin-left: 150px;
             margin-top: -50px;
@@ -709,11 +709,12 @@
             position: absolute;
             left:0;
             top:42px;
-            background:rgba(255,255,255,.8);
-            width:120px;
+            background:rgba(255, 255, 255, 0.9);
+            width:140px;
             opacity: 0;
             max-height: 0;
             overflow: hidden;
+            z-index: 2;
           }
         .menu3.active ul{
             opacity: 1;
@@ -721,7 +722,7 @@
           }
         .menu3 ul li a{
             display: block;
-            padding:10px 12px;
+            padding:10px 20px;
             color:#363636;
             font-size: 1.55rem
           }
