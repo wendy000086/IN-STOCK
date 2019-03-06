@@ -705,7 +705,7 @@
         .menu3.active{
             background: #fff;
           }
-        .menu3 ul{
+        .menu3 .box{
             position: absolute;
             left:0;
             top:42px;
@@ -718,9 +718,9 @@
           }
         .menu3.active ul{
             opacity: 1;
-            max-height: 400px;
+            max-height: 350px;
           }
-        .menu3 ul li a{
+        .menu3 .box li a{
             display: block;
             padding:10px 20px;
             color:#363636;
@@ -797,9 +797,9 @@
              #menu .title{
                 margin-top: 0;
             }
-            .menu3 ul{
+            .menu3 .box{
                 position: fixed;
-                background:rgb(255, 255, 255);
+                background:#fff;
                 width:100%;
                 z-index: 2;
               }
